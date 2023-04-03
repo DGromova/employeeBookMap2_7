@@ -23,7 +23,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         if (employeesMap.containsValue(employee)) {
             employeesMap.remove(employee);
         } else {
-            throw new EmployeeNotFoundException("Сотрудник " + employee + " не найден");
+            throw new EmployeeNotFoundException("Сотрудник " + employee + " не найден ");
         }
         return employee;
     }
